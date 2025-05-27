@@ -2,7 +2,7 @@
 @import "_fonts";
 @import "_particles";
 
-// Add these mixins at the top of your file
+
 @mixin mobile {
   @media (max-width: 768px) {
     @content;
@@ -27,6 +27,7 @@ body {
     width: 100vw;
     height: 92vh;
     background-color: $bgcolor;
+    
 
     &__nav {
         width: 90%;
@@ -102,12 +103,14 @@ body {
             flex-direction: column;
             height: auto;
             padding: 10px 0;
+            position: relative;
         }
     }
-
-    .hedder__text {
+  
+}
+.hedder__text {
         display: block;
-        height: 227vh;
+        height: 296vh;
         width: 30vw;
         background-color: $boxcollor;
         border-radius: 0 20px 20px 0;
@@ -115,19 +118,28 @@ body {
 
         @include mobile {
             width: 100%;
-            height: 60px; // Reduced height for mobile header
+            height: 60px; 
             top: 0;
             left: 0;
-            z-index: 100; // Ensure it stays on top
+            z-index: 100; 
             border-radius: 0;
+            
         }
 
         @include tablet {
             width: 40vw;
         }
-    }
-}
 
+    }
+  .tumb{
+        height: 20vh;
+        width: 20vw;
+        position: relative;
+        @include mobile{
+            height: 10vh;
+            width: 40vw;
+        }
+    }
 main {
     font-family: $fonts;
     font-size: $font-size-l;
@@ -148,7 +160,7 @@ main {
     @include mobile {
         width: 90vw;
         margin-left: 5%;
-        margin-top: 80px; // Add top margin to prevent content hiding under fixed header
+        margin-top: 80px; 
         padding-top: 20px;
     }
 
@@ -188,7 +200,7 @@ button {
     }
 }
 
-// Add styles for form elements
+
 form {
     display: flex;
     flex-direction: column;
@@ -226,12 +238,12 @@ form {
     }
 }
 
-// Add smooth scrolling
+
 html {
     scroll-behavior: smooth;
 }
 
-// Enhance section headings
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -252,7 +264,7 @@ h2 {
     }
 }
 
-// Additional responsive adjustments
+
 html, body {
     @include mobile {
         font-size: 14px;
