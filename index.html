@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deadmicguy's Portfolio</title>
-</head>
-<body>
-    <p><!DOCTYPE html>
-<html lang="lv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mans Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-bg"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mans Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
 
-<div class="animation-wrapper">
-  <div class="particle particle-1"></div>
-  <div class="particle particle-2"></div>
-  <div class="particle particle-3"></div>
-  <div class="particle particle-4"></div>
-</div>
-
-
-  <div class="container">
-        <div class="container__nav">
-            <div class="container__nav__left">
-                <a href="#" class="container__nav__left--link">Web Dev</a>
-            </div>
-            <div class="container__nav__right">
-                <a href="#About-me" class="container__nav__right--link">About me</a>
-                <a href="#Projects" class="container__nav__right--link">Projects</a>
-                <a href="#Skills" class="container__nav__right--link">Skills</a>
-                <a href="#Contacts" class="container__nav__right--link">Contacts</a>
-            </div>
-        </div>
-        <div class="hedder__text">
-            <div class="space"></div>
-          <h1 class="hedder__txt">Dāniels Puzulis</h1>
-          <h3 class="hedder__txt">Junior web dev</h3>
-        </div>
-
-    </div>
-<div class="conteiner2">
-    <main>
-      <section id="About-me">
-        <h2>About me</h2>
-        <p>Hi! I’m Daniel, a web developer based in Cesis, Latvia. I build modern, responsive websites and applications with a focus on clean design and solid functionality. I enjoy working across the full stack and constantly learning new tools to improve my skills.
-            I regularly participate in hackathons, where I thrive on fast-paced problem-solving and creative teamwork. These experiences have helped me grow as a developer and taught me how to quickly turn ideas into working solutions.
-            I’m passionate about coding, curious by nature, and always looking for the next challenge. Whether it’s a team project or a solo build, I bring energy, focus, and a drive to create something great.
-        </p>
-      </section>
-      <div class="space"></div>
-      <section id="Skills">
-        <h2>My skills</h2>
-        <ul>
-          <li>HTML5 and CSS</li>
-          <li>SCSS</li>
-          <li>PHP Basics</li>
-          <li>MySQL Basics</li>
-          <li>Laravel</li>
-          <li>C++ Basics</li>
-          <li>JavaScript Basics</li>
-          <li>Git and Github</li>
-        </ul>
-      </section>
-      <div class="space"></div>
-
-      <section id="Projects">
-        <h2>Projects Highlights</h2>
-    <ul>
-        <li>Ingridease</li>
-        <p class="description">Ingrdease is a smart recipe app built during the "Tīri labi apritei" hackathon. Users can input the ingredients they have at home, and the app suggests recipes to reduce food waste and make cooking easier. It's all about sustainable living, smart cooking, and making the most of what you’ve got.
-        </p>
-        <img src="Ingredease.png" class="tumb">
-        <a href="https://hakaton-wbsite-git-main-daunis69s-projects.vercel.app/"><button class="btn">Visit project</button></a>
-        <div class="spacesm"></div>
-    </ul>
-
- <div class="space"></div>
-      <section id="Contacts">
-        <h2>Contact me</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="585057c5-8a52-4dc2-9d23-27742c5a3797">
-          <label for="Name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">E-mail:</label>
-          <input type="email" id="E-mail" name="E-mail" required>
-
-          <label for="email">Phone:</label>
-          <input type="phone" id="phone" name="phone" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="1" required></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
+    <div class="animation-wrapper" aria-hidden="true">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
     </div>
 
-    <footer>
-      <p>&copy; 2025 Web dev Daniel</p>
-    </footer>
-  </div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">
+          <a href="#">Web Dev</a>
+        </div>
 
-</body>
-</html>
-</p>
-    
-</body>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#About-me">About me</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Contacts">Contacts</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section id="About-me" class="panel intro-panel">
+          <h2>About me</h2>
+          <p>
+            Hi! I’m Daniel, a web developer based in Cesis, Latvia. I build
+            modern, responsive websites and applications with a focus on clean
+            design and solid functionality. I enjoy working across the full stack
+            and constantly learning new tools to improve my skills. I regularly
+            participate in hackathons, where I thrive on fast-paced
+            problem-solving and creative teamwork. These experiences have helped
+            me grow as a developer and taught me how to quickly turn ideas into
+            working solutions. I’m passionate about coding, curious by nature,
+            and always looking for the next challenge. Whether it’s a team
+            project or a solo build, I bring energy, focus, and a drive to create
+            something great.
+          </p>
+        </section>
+
+        <section id="Skills" class="panel">
+          <h2>My skills</h2>
+          <ul class="skill-list">
+            <li>HTML5 and CSS</li>
+            <li>SCSS</li>
+            <li>PHP Basics</li>
+            <li>MySQL Basics</li>
+            <li>Laravel</li>
+            <li>C++ Basics</li>
+            <li>JavaScript Basics</li>
+            <li>Git and Github</li>
+          </ul>
+        </section>
+
+        <section id="Projects" class="panel">
+          <h2>Projects Highlights</h2>
+          <article class="project-card">
+            <div class="project-copy">
+              <h3>Ingridease</h3>
+              <p class="description">
+                Ingrdease is a smart recipe app built during the "Tīri labi
+                apritei" hackathon. Users can input the ingredients they have at
+                home, and the app suggests recipes to reduce food waste and make
+                cooking easier. It's all about sustainable living, smart cooking,
+                and making the most of what you’ve got.
+              </p>
+              <a
+                class="btn"
+                href="https://hakaton-wbsite-git-main-daunis69s-projects.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Visit project</a
+              >
+            </div>
+            <img src="Ingredease.png" alt="Ingridease project preview" />
+          </article>
+        </section>
+
+        <section id="Contacts" class="panel contact-panel">
+          <h2>Contact me</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="585057c5-8a52-4dc2-9d23-27742c5a3797"
+            />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Web dev Daniel</p>
+      </footer>
+    </div>
+  </body>
 </html>
 
