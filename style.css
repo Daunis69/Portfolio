@@ -540,3 +540,15 @@ footer {
     margin-left: 0;
   }
 }
+
+.nav .nav-github {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--text);
+}
+
+.nav .nav-github:hover,
+.nav .nav-github:focus-visible {
+  background: var(--accent-strong);
+}
