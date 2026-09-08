@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mans Portfolio</title>
+    <title>Daniels Puzulis | Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -35,35 +35,49 @@
       </header>
 
       <main class="content">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="eyebrow">WEB DEVELOPER · CESIS, LATVIA</p>
+          <h1 id="hero-title">Hi, I’m Daniels Puzulis.</h1>
+          <p class="hero-description">
+            I build responsive websites and practical web applications with a
+            focus on clean design and solid functionality.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#Projects">View my projects</a>
+            <a class="btn btn-secondary" href="https://github.com/Daunis69" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          </div>
+        </section>
+
         <section id="About-me" class="panel intro-panel">
           <h2>About me</h2>
           <p>
-            Hi! I’m Daniels Puzulis, a web developer based in Cesis, Latvia. I build
-            modern, responsive websites and applications with a focus on clean
-            design and solid functionality. I enjoy working across the full stack
-            and constantly learning new tools to improve my skills. I regularly
-            participate in hackathons, where I thrive on fast-paced
-            problem-solving and creative teamwork. These experiences have helped
-            me grow as a developer and taught me how to quickly turn ideas into
-            working solutions. I’m passionate about coding, curious by nature,
-            and always looking for the next challenge. Whether it’s a team
-            project or a solo build, I bring energy, focus, and a drive to create
-            something great.
+            I’m a programming student based in Cesis, Latvia, interested in
+            frontend and full-stack development. I enjoy turning ideas into
+            responsive interfaces that are useful, accessible, and easy to use.
+          </p>
+          <p>
+            Hackathons have helped me grow through fast-paced problem-solving and
+            teamwork. I’m always learning, building, and looking for my next
+            opportunity to contribute.
           </p>
         </section>
 
         <section id="Skills" class="panel">
           <h2>My skills</h2>
-          <ul class="skill-list">
-            <li>HTML5 and CSS</li>
-            <li>SCSS</li>
-            <li>PHP Basics</li>
-            <li>MySQL Basics</li>
-            <li>Laravel</li>
-            <li>C++ Basics</li>
-            <li>JavaScript Basics</li>
-            <li>Git and Github</li>
-          </ul>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, SCSS, JavaScript</p>
+            </div>
+            <div class="skill-group">
+              <h3>Backend</h3>
+              <p>PHP, Laravel, MySQL</p>
+            </div>
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <p>Git, GitHub, responsive design</p>
+            </div>
+          </div>
         </section>
 
         <section id="Projects" class="panel">
@@ -72,7 +86,7 @@
             <div class="project-copy">
               <h3>Ingridease</h3>
               <p class="description">
-                Ingrdease is a smart recipe app built during the "Tīri labi
+                Ingridease is a smart recipe app built during the "Tīri labi
                 apritei" hackathon. Users can input the ingredients they have at
                 home, and the app suggests recipes to reduce food waste and make
                 cooking easier. It's all about sustainable living, smart cooking,
@@ -82,16 +96,21 @@
                 class="btn"
                 href="https://hakaton-wbsite-git-main-daunis69s-projects.vercel.app/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 >Visit project</a
               >
               <a
                 class="btn github-btn"
                 href="https://github.com/Daunis69/hakaton-wbsite"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 >View on GitHub</a
               >
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
             </div>
             <img src="Ingredease.png" alt="Ingridease project preview" />
           </article>
@@ -106,25 +125,25 @@
               value="585057c5-8a52-4dc2-9d23-27742c5a3797"
             />
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Daniels Puzulis" required />
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required />
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required />
+            <label for="phone">Phone <span>(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+371 0000 0000" />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Send message</button>
           </form>
         </section>
       </main>
 
       <footer>
-        <p>&copy; 2025 Web dev Daniel</p>
+        <p>&copy; 2026 Daniels Puzulis</p>
       </footer>
     </div>
   </body>
