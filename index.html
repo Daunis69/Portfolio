@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="top">
+    <div class="custom-cursor" aria-hidden="true">
+      <span class="custom-cursor-dot"></span>
+      <span class="custom-cursor-ring"></span>
+    </div>
     <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
     <div class="page-bg"></div>
 
@@ -40,9 +44,9 @@
 
       <main class="content">
         <section class="hero" aria-labelledby="hero-title">
-          <p class="eyebrow">WEB DEVELOPER · CESIS, LATVIA</p>
-          <p class="availability"><span aria-hidden="true"></span> Open to learning and new opportunities</p>
-          <h1 id="hero-title">Hi, I’m Daniels Puzulis.</h1>
+          <p class="eyebrow" data-parallax="0.22">WEB DEVELOPER · CESIS, LATVIA</p>
+          <p class="availability" data-parallax="0.12"><span aria-hidden="true"></span> Open to learning and new opportunities</p>
+          <h1 id="hero-title" data-parallax="0.08">Hi, I’m Daniels Puzulis.</h1>
           <p class="hero-description">
             I build responsive websites and practical web applications with a
             focus on clean design and solid functionality.
@@ -50,13 +54,14 @@
           <div class="hero-actions">
             <a class="btn" href="#Projects">View my projects</a>
             <a class="btn btn-secondary" href="https://github.com/Daunis69" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            <a class="btn btn-secondary" href="CV.pdf" target="_blank" rel="noopener noreferrer">View my CV</a>
           </div>
           <a class="scroll-cue" href="#About-me">
             <span aria-hidden="true">↓</span> Scroll to explore
           </a>
         </section>
 
-        <section id="About-me" class="panel intro-panel">
+        <section id="About-me" class="panel intro-panel" data-section>
           <h2>About me</h2>
           <p>
             I’m a programming student based in Cesis, Latvia, interested in
@@ -70,27 +75,27 @@
           </p>
         </section>
 
-        <section id="Skills" class="panel">
+        <section id="Skills" class="panel" data-section>
           <h2>My skills</h2>
           <div class="skills-grid">
-            <div class="skill-group">
+            <div class="skill-group" data-reveal>
               <h3>Frontend</h3>
               <p>HTML, CSS, SCSS, JavaScript</p>
             </div>
-            <div class="skill-group">
+            <div class="skill-group" data-reveal>
               <h3>Backend</h3>
               <p>PHP, Laravel, MySQL</p>
             </div>
-            <div class="skill-group">
+            <div class="skill-group" data-reveal>
               <h3>Tools</h3>
               <p>Git, GitHub, responsive design</p>
             </div>
           </div>
         </section>
 
-        <section id="Projects" class="panel">
+        <section id="Projects" class="panel" data-section>
           <h2>Projects Highlights</h2>
-          <article class="project-card">
+          <article class="project-card" data-reveal data-tilt>
             <div class="project-copy">
               <p class="project-meta">HACKATHON PROJECT · 2025</p>
               <h3>Ingridease</h3>
@@ -106,14 +111,14 @@
                 href="https://hakaton-wbsite-git-main-daunis69s-projects.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Visit project</a
+                >Live Demo</a
               >
               <a
                 class="btn github-btn"
                 href="https://github.com/Daunis69/hakaton-wbsite"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View on GitHub</a
+                >GitHub</a
               >
               <ul class="project-tags" aria-label="Technologies used">
                 <li>HTML</li>
@@ -125,9 +130,9 @@
           </article>
         </section>
 
-        <section id="Contacts" class="panel contact-panel">
+        <section id="Contacts" class="panel contact-panel" data-section>
           <h2>Contact me</h2>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form action="https://api.web3forms.com/submit" method="POST" data-contact-form novalidate>
             <input
               type="hidden"
               name="access_key"
@@ -147,6 +152,7 @@
             <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
 
             <button type="submit">Send message</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
           </form>
         </section>
       </main>
@@ -156,6 +162,7 @@
         <a href="https://github.com/Daunis69" target="_blank" rel="noopener noreferrer">GitHub</a>
       </footer>
     </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
 
