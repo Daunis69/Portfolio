@@ -4,6 +4,29 @@
   const navLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
   const sections = [...document.querySelectorAll('[data-section]')];
   const revealItems = [...document.querySelectorAll('[data-reveal]')];
+  const navToggle = document.querySelector('.nav-toggle');
+  const mobileLayout = window.matchMedia('(max-width: 800px)');
+  const setMenuOpen = (open) => {
+    navToggle?.setAttribute('aria-expanded', String(open));
+    topbar?.classList.toggle('is-menu-open', open);
+  };
+
+  if (topbar && navToggle) {
+    topbar.classList.add('has-mobile-nav');
+    navToggle.addEventListener('click', () => {
+      setMenuOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('click', (event) => {
+      if (!topbar.contains(event.target)) setMenuOpen(false);
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        navToggle.focus();
+      }
+    });
+    mobileLayout.addEventListener('change', () => setMenuOpen(false));
+  }
 
   const setupCustomCursor = () => {
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
@@ -67,7 +90,10 @@
       if (!target) return;
 
       event.preventDefault();
+      setMenuOpen(false);
       target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
       history.pushState(null, '', link.getAttribute('href'));
     });
   });
@@ -103,7 +129,7 @@
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 
-  if (!prefersReducedMotion) {
+  if (!prefersReducedMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     const parallaxItems = [...document.querySelectorAll('[data-parallax]')];
     const hero = document.querySelector('.hero');
     hero?.addEventListener('pointermove', (event) => {

@@ -33,7 +33,10 @@
           <a href="#">Web Dev</a>
         </div>
 
-        <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+          <span>Menu</span><span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="main-navigation" class="nav" aria-label="Main navigation">
           <a href="#About-me">About me</a>
           <a href="#Projects">Projects</a>
           <a href="#Skills">Skills</a>
@@ -74,7 +77,7 @@
             opportunity to contribute.
           </p>
         </section>
-          <section id="About-me" class="panel intro-panel" data-section>
+          <section id="Hobbies" class="panel intro-panel" data-section>
           <h2>My Hobbies</h2>
           <p>
             In my free time, I enjoy exploring new technologies, contributing to open-source projects, and participating in coding challenges.
@@ -83,7 +86,7 @@
             I also love soldering and tinkering with electronics, which allows me to combine my passion for programming with hands-on creativity.
           </p>
           <p> 
-            Curenty I am learning to make AI to automize some of my tasks. I used a ai bot to scrape data form a website to make a 825 exel sheet with company wit no website or a outdated website with security flaws, and now I am working on a ai bot that takes the data from the exel sheet and sends an email to the company with a offer to make them a new website.
+            Curenty I am learning to make AI to automize some of my tasks. I used a ai bot to scrape data form a website to make a 825 line exel sheet with company wit no website or a outdated website with security flaws, and now I am working on a ai bot that takes the data from the exel sheet and sends an email to the company with a offer to make them a new website.
           </p>
         </section>
         <section id="Skills" class="panel" data-section>
@@ -117,6 +120,7 @@
                 cooking easier. It's all about sustainable living, smart cooking,
                 and making the most of what you’ve got. In the making of the project we used css, html and javascript.
               </p>
+              <div class="project-actions">
               <a
                 class="btn"
                 href="https://hakaton-wbsite-git-main-daunis69s-projects.vercel.app/"
@@ -131,6 +135,7 @@
                 rel="noopener noreferrer"
                 >GitHub</a
               >
+              </div>
               <ul class="project-tags" aria-label="Technologies used">
                 <li>HTML</li>
                 <li>CSS</li>
